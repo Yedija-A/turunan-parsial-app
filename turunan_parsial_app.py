@@ -4,17 +4,17 @@ import numpy as np
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 
-st.title("Aplikasi Turunan parsial")
-st.markdown("## Studi Kasus: Analisis Biaya Produksi Berdasarkan Jumlah Tenaga Kerja dan Waktu Kerja")
+st.title("Aplikasi Interaktif: Turunan Parsial dan Bidang Singgung")
+st.markdown("## 🧮 Kasus Dunia Nyata: Analisis Biaya Produksi")
 
 st.latex(r""" C(x, y) = x^2 + y^2 + 2xy """)
 
 # Input fungsi manual
-x, y = sp.symbols('x y')
-fungsi_str = st.text_input("Masukkan fungsi f(x, y):", "x**2 * y + y**3")
+st.subheader("Masukkan fungsi f(x, y):")
+fungsi_input = st.text_input("x**2 + y**2 + 2*x*y")
 
 # Inisialisasi simbol
-
+x, y = sp.symbols('x y')
 try:
     f = sp.sympify(fungsi_input)
     fx = sp.diff(f, x)
