@@ -11,7 +11,7 @@ st.latex(r""" C(x, y) = x^2 + y^2 + 2xy """)
 
 # Input fungsi manual
 st.subheader("Masukkan fungsi f(x, y):")
-fungsi_input = st.text_input("x**2 + y**2 + 2*x*y")
+fungsi_input = st.text_input("Contoh: x**2 + y**2 + 2*x*y", "x**2 + y**2 + 2*x*y")
 
 # Inisialisasi simbol
 x, y = sp.symbols('x y')
