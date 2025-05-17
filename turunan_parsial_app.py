@@ -10,8 +10,7 @@ st.markdown("## Studi Kasus: Analisis Biaya Produksi Berdasarkan Jumlah Tenaga K
 st.latex(r""" C(x, y) = x^2 + y^2 + 2xy """)
 
 # Input fungsi manual
-st.subheader("Masukkan fungsi f(x, y):")
-fungsi_input = st.text_input()
+fungsi_str = st.text_input("Masukkan fungsi f(x, y):", "x**2 * y + y**3")
 
 # Inisialisasi simbol
 x, y = sp.symbols('x y')
