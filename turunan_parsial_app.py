@@ -4,8 +4,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 
-st.title("Aplikasi Interaktif: Turunan Parsial dan Bidang Singgung")
-st.markdown("## 🧮 Kasus Dunia Nyata: Analisis Biaya Produksi")
+st.title("Aplikasi Turunan parsial")
+st.markdown("## Studi Kasus: Analisis Biaya Produksi Berdasarkan Jumlah Tenaga Kerja dan Waktu Kerja")
 
 st.latex(r""" C(x, y) = x^2 + y^2 + 2xy """)
 
