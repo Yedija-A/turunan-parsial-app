@@ -10,10 +10,11 @@ st.markdown("## Studi Kasus: Analisis Biaya Produksi Berdasarkan Jumlah Tenaga K
 st.latex(r""" C(x, y) = x^2 + y^2 + 2xy """)
 
 # Input fungsi manual
+x, y = sp.symbols('x y')
 fungsi_str = st.text_input("Masukkan fungsi f(x, y):", "x**2 * y + y**3")
 
 # Inisialisasi simbol
-x, y = sp.symbols('x y')
+
 try:
     f = sp.sympify(fungsi_input)
     fx = sp.diff(f, x)
